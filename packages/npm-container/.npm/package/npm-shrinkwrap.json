@@ -1,0 +1,164 @@
+{
+  "dependencies": {
+    "levelgraph": {
+      "version": "0.10.5",
+      "dependencies": {
+        "xtend": {
+          "version": "4.0.0"
+        },
+        "callback-stream": {
+          "version": "1.0.2"
+        },
+        "async": {
+          "version": "0.9.0"
+        },
+        "readable-stream": {
+          "version": "1.0.33",
+          "dependencies": {
+            "core-util-is": {
+              "version": "1.0.1"
+            },
+            "isarray": {
+              "version": "0.0.1"
+            },
+            "string_decoder": {
+              "version": "0.10.31"
+            },
+            "inherits": {
+              "version": "2.0.1"
+            }
+          }
+        },
+        "level-write-stream": {
+          "version": "1.0.0",
+          "dependencies": {
+            "end-stream": {
+              "version": "0.1.0",
+              "dependencies": {
+                "write-stream": {
+                  "version": "0.4.3",
+                  "dependencies": {
+                    "readable-stream": {
+                      "version": "0.0.4"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "levelup": {
+          "version": "0.19.0",
+          "dependencies": {
+            "bl": {
+              "version": "0.8.2"
+            },
+            "deferred-leveldown": {
+              "version": "0.2.0",
+              "dependencies": {
+                "abstract-leveldown": {
+                  "version": "0.12.4"
+                }
+              }
+            },
+            "errno": {
+              "version": "0.1.2"
+            },
+            "prr": {
+              "version": "0.0.0"
+            },
+            "semver": {
+              "version": "2.3.2"
+            },
+            "xtend": {
+              "version": "3.0.0"
+            }
+          }
+        },
+        "leveldown": {
+          "version": "0.10.5",
+          "dependencies": {
+            "bindings": {
+              "version": "1.2.1"
+            },
+            "nan": {
+              "version": "1.8.4"
+            }
+          }
+        },
+        "level-js": {
+          "version": "2.1.6",
+          "dependencies": {
+            "abstract-leveldown": {
+              "version": "0.12.4",
+              "dependencies": {
+                "xtend": {
+                  "version": "3.0.0"
+                }
+              }
+            },
+            "idb-wrapper": {
+              "version": "1.4.1"
+            },
+            "isbuffer": {
+              "version": "0.0.0"
+            },
+            "ltgt": {
+              "version": "1.2.0"
+            },
+            "tape": {
+              "version": "2.10.3",
+              "dependencies": {
+                "deep-equal": {
+                  "version": "0.2.2"
+                },
+                "defined": {
+                  "version": "0.0.0"
+                },
+                "glob": {
+                  "version": "3.2.11",
+                  "dependencies": {
+                    "minimatch": {
+                      "version": "0.3.0",
+                      "dependencies": {
+                        "lru-cache": {
+                          "version": "2.6.3"
+                        },
+                        "sigmund": {
+                          "version": "1.0.0"
+                        }
+                      }
+                    }
+                  }
+                },
+                "inherits": {
+                  "version": "2.0.1"
+                },
+                "object-inspect": {
+                  "version": "0.3.1"
+                },
+                "resumer": {
+                  "version": "0.0.0"
+                },
+                "through": {
+                  "version": "2.3.7"
+                }
+              }
+            },
+            "typedarray-to-buffer": {
+              "version": "1.0.4"
+            },
+            "xtend": {
+              "version": "2.1.2",
+              "dependencies": {
+                "object-keys": {
+                  "version": "0.4.0"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

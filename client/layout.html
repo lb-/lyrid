@@ -1,0 +1,77 @@
+<template name="layout">
+  <div class="ui page grid">
+    <div class="eleven wide column">
+      {{> Template.dynamic template=main}}
+    </div>
+    <div class="five wide column">
+      <div class="ui vertical menu">
+        <div class="item">
+          <div class="ui input"><input type="text" placeholder="Search..."></div>
+        </div>
+        <div class="item">
+          <button class="huge fluid ui button">
+            <i class="space shuttle icon"></i>
+          </button>
+        </div>
+        <div class="item">
+          <button class="fluid ui button">
+            <i class="pencil icon"></i> Edit
+          </button>
+        </div>
+      </div>
+      <div class="ui vertical menu">
+        <div class="header item">
+          Suitable For
+          <span class="ui teal label">3</span>
+        </div>
+        <div class="text item">
+          <p><a>Espresso</a></p>
+        </div>
+        <div class="item">
+          <p><a>Turkish</a></p>
+        </div>
+        <div class="item">
+          <p><a>Plunger</a></p>
+        </div>
+      </div>
+      <div class="ui vertical menu">
+        <div class="header item">
+          Origins
+          <span class="ui teal label">4</span>
+        </div>
+        <div class="text item">
+          <p><a>El Salvador</a></p>
+        </div>
+        <div class="item">
+          <p><a>Nicaragua</a></p>
+        </div>
+        <div class="item">
+          <p><a>Colombia</a></p>
+        </div>
+        <div class="item">
+          <p><a>Kenya</a></p>
+        </div>
+      </div>
+      <div class="ui vertical menu">
+        <div class="header item">
+          Roasted
+          <span class="ui teal label">1</span>
+        </div>
+        <div class="text item">
+          <p><a>Daily</a></p>
+        </div>
+      </div>
+      <div class="ui vertical menu">
+        <div class="header item">
+          Images
+          <span class="ui teal label">1</span>
+        </div>
+        <div class="text item">
+          <a>
+            <img class="ui centered bordered image" src="https://placeimg.com/1000/300/nature/grayscale">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

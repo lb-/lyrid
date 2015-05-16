@@ -1,0 +1,21 @@
+<template name="page">
+  <div class="ui segment">
+    {{#if loaded}}
+    <div class="ui vertical segment">
+      <h1 class="ui center aligned header">
+        {{page.name}}
+      </h1>
+    </div>
+    <div class="ui vertical segment">
+      <img class="ui centered bordered image" src="https://placeimg.com/1000/300/nature/grayscale">
+    </div>
+    <div class="ui vertical segment">
+      {{page.description}}
+    </div>
+    {{else}}
+    <div class="ui vertical segment">
+      <p>Loading...</p>
+    </div>
+    {{/if}}
+  </div>
+</template>

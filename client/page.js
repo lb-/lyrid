@@ -3,17 +3,17 @@
 Template.page.onCreated(function () {
   var instance = this;
   var pageId = Session.get('pageId');
-  console.log('pageId', pageId);
+  // console.log('pageId', pageId);
 
   //reactivevar for if the subscription is loaded
   instance.loaded = new ReactiveVar(false);
 
   //subscriptions
   instance.autorun(function () {
-    console.log('asking for page', pageId);
+    // console.log('asking for page', pageId);
     var subscription = instance.subscribe('page', pageId);
     if (subscription.ready()) {
-      console.log('page received');
+      // console.log('page received');
       instance.loaded.set(true);
     } else {
       console.log('subscription not ready yet');

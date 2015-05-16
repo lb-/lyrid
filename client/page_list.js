@@ -8,10 +8,10 @@ Template.pageList.onCreated(function () {
 
   //subscriptions
   instance.autorun(function () {
-    console.log('asking for pages');
+    // console.log('asking for pages');
     var subscription = instance.subscribe('pages', {});
     if (subscription.ready()) {
-      console.log('pages received');
+      // console.log('pages received');
       instance.loaded.set(true);
     } else {
       console.log('subscription not ready yet');

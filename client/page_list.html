@@ -1,0 +1,21 @@
+<template name="pageList">
+  <div class="ui vertical menu">
+    <div class="header item">
+      Pages
+      <span class="ui teal label">
+        {{totalpages}}
+      </span>
+    </div>
+    {{#if loaded}}
+      {{#each pages}}
+      <div class="text item">
+        <a href="{{route 'page' _id}}">
+          {{name}}
+        </a>
+      </div>
+      {{/each}}
+    {{else}}
+    <div class="text item"><p>Loading..</p></div>
+    {{/if}}
+  </div>
+</template>

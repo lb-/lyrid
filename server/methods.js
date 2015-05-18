@@ -41,7 +41,42 @@ Meteor.methods({
     console.log(result);
 
     return result;
-  }
+  },
+  // context: function (pageId, options) {
+  //   var result = {};
+  //
+  //   lyrid.context.get({object:pageId}, function (error, list) {
+  //     if (error) {
+  //       console.log(error);
+  //     } else {
+  //       result.asObject = list;
+  //       console.log('asObject', list);
+  //
+  //     }
+  //   });
+  //
+  //   lyrid.context.get({predicate:pageId}, function (error, list) {
+  //     if (error) {
+  //       console.log(error);
+  //     } else {
+  //       result.asPredicate = list;
+  //       console.log('asPredicate', list);
+  //     }
+  //   });
+  //
+  //   lyrid.context.get({subject:pageId}, function (error, list) {
+  //     if (error) {
+  //       console.log(error);
+  //     } else {
+  //       result.asSubject = list;
+  //       console.log('asSubject', list);
+  //     }
+  //   });
+  //
+  //   console.log(result);
+  //
+  //   return result;
+  // }
 });
 
 // var testResult = {

@@ -5,11 +5,7 @@
       <span class="ui teal label">{{total}}</span>
     </div>
     {{#each items}}
-    <div class="text item">
-      <p>
-        <a href="{{url}}">{{name}}</a>
-      </p>
-    </div>
+      {{>textItem}}
     {{/each}}
   </div>
 </template>

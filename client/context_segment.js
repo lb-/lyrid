@@ -2,15 +2,12 @@
 
 Template.contextSegment.helpers({
   title: function () {
-    return 'Suitable For';
+    return this.title || 'Default Title';
   },
   total: function () {
-    return 3;
+    return this.items.length;
   },
   items: function () {
-    return [
-      {name: 'Espresso'},
-      {name: 'Plunger'}
-    ];
+    return this.items || [];
   }
 });

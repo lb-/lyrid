@@ -1,5 +1,25 @@
 <template name="context">
-  {{>contextSegment}}
-  {{>contextSegment}}
-  {{>contextSegment}}
+  <ul>
+  {{#each contextTriples}}
+    <li>
+      <strong>{{context}}</strong> {{>textItem id=subject}} {{>textItem id=predicate}} {{>textItem id=object}} <sup>{{_id}}</sup>
+    </li>
+  {{/each}}
+  </ul>
+  {{#each groupings}}
+  <strong>{{>textItem id=title}}</strong>
+  <ul>
+    {{#each items}}
+    <li>
+      <!-- {{>textItem id=subject}} {{>textItem id=predicate}} {{>textItem id=object}} -->
+      <strong>{{>textItem id=relevantId}}</strong>
+    </li>
+    {{/each}}
+  </ul>
+  {{/each}}
+
+  {{>contextSegment title='Related' items=contextTriples}}
+  Note: as subject is priority, then as object then as predicate
+  Subject gets grouped by predicate?
+
 </template>

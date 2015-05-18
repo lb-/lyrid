@@ -1,0 +1,15 @@
+<template name="contextSegment">
+  <div class="ui vertical menu">
+    <div class="header item">
+      {{title}}
+      <span class="ui teal label">{{total}}</span>
+    </div>
+    {{#each items}}
+    <div class="text item">
+      <p>
+        <a href="{{url}}">{{name}}</a>
+      </p>
+    </div>
+    {{/each}}
+  </div>
+</template>

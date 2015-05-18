@@ -2,7 +2,7 @@
 
 Template.page.onCreated(function () {
   var instance = this;
-  var pageId = Session.get('pageId');
+
   // console.log('pageId', pageId);
 
   //reactivevar for if the subscription is loaded
@@ -10,6 +10,7 @@ Template.page.onCreated(function () {
 
   //subscriptions
   instance.autorun(function () {
+    var pageId = Session.get('pageId');
     // console.log('asking for page', pageId);
     var subscription = instance.subscribe('page', pageId);
     if (subscription.ready()) {
@@ -20,17 +21,18 @@ Template.page.onCreated(function () {
     }
   });
 
-  //cursor
-
-  instance.page = function () {
-    return lyrid.pages.findOne({_id: pageId});
-  }
+  // //cursor
+  //
+  // instance.page = function () {
+  //   return lyrid.pages.findOne({_id: pageId});
+  // }
 
 });
 
 Template.page.helpers({
   page: function () {
-    var page = Template.instance().page()
+    var pageId = Session.get('pageId');
+    var page = lyrid.pages.findOne({_id: pageId});
     return page;
   },
   loaded: function () {

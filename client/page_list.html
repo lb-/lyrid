@@ -9,7 +9,7 @@
     {{#if loaded}}
       {{#each pages}}
       <div class="text item">
-        <a href="{{route 'page' _id}}">
+        <a href="{{urlFor '/page/:id' id=_id}}">
           {{name}}
         </a>
       </div>

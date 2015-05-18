@@ -14,3 +14,7 @@ meteorhacks:flow-router
 meteorhacks:flow-layout
 reactive-var
 random
+chrismbeckett:toastr
+lbee:lunr
+momentjs:moment
+arillo:flow-router-helpers

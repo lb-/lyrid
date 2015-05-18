@@ -1,3 +1,5 @@
 {
+  "levelup": "1.0.0",
+  "mongodown": "1.0.2",
   "levelgraph": "0.10.5"
 }

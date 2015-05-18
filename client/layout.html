@@ -4,21 +4,9 @@
       {{> Template.dynamic template=main}}
     </div>
     <div class="five wide column">
-      <div class="ui vertical menu">
-        <div class="item">
-          <div class="ui input"><input type="text" placeholder="Search..."></div>
-        </div>
-        <div class="item">
-          <button class="huge fluid ui button">
-            <i class="space shuttle icon"></i>
-          </button>
-        </div>
-        <div class="item">
-          <button class="fluid ui button">
-            <i class="pencil icon"></i> Edit
-          </button>
-        </div>
-      </div>
+      {{>nav}}
+      {{>context}}
+      <hr> ORIGINAL CONTEXT
       <div class="ui vertical menu">
         <div class="header item">
           Suitable For

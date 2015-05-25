@@ -1,26 +1,5 @@
 <template name="context">
   {{#each groupings}}
-  <div class="ui fluid vertical menu">
-    <div class="header item">
-      {{>textItem id=title plain=true}}
-      <span class="ui teal label">3</span>
-    </div>
-    {{#each items}}
-      {{>textItem id=relevantId}}
-    {{/each}}
-  </div>
+  {{>contextSegment title=title items=items}}
   {{/each}}
-  <hr>
-  <ul>
-  {{#each contextTriples}}
-    <li>
-      <strong>{{context}}</strong> {{>textItem id=subject}} {{>textItem id=predicate}} {{>textItem id=object}} <sup>{{_id}}</sup>
-    </li>
-  {{/each}}
-  </ul>
-
-  {{>contextSegment title='Related' items=contextTriples}}
-  Note: as subject is priority, then as object then as predicate
-  Subject gets grouped by predicate?
-
 </template>

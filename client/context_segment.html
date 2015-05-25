@@ -1,11 +1,11 @@
 <template name="contextSegment">
-  <div class="ui vertical fluid menu">
+  <div class="ui fluid vertical menu">
     <div class="header item">
-      {{title}}
+      {{>textItem id=title plain=true}}
       <span class="ui teal label">{{total}}</span>
     </div>
     {{#each items}}
-      {{>textItem}}
+      {{>textItem id=relevantId}}
     {{/each}}
   </div>
 </template>

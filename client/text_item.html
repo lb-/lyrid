@@ -1,5 +1,9 @@
 <template name="textItem">
-  <div class="text item">
+  {{#if plain}}
     <a href="{{url}}">{{name}}</a>
-  </div>
+  {{else}}
+    <div class="{{class}}">
+      <a href="{{url}}">{{name}}</a>
+    </div>
+  {{/if}}
 </template>

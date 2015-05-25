@@ -1,4 +1,16 @@
 <template name="context">
+  {{#each groupings}}
+  <div class="ui fluid vertical menu">
+    <div class="header item">
+      {{>textItem id=title plain=true}}
+      <span class="ui teal label">3</span>
+    </div>
+    {{#each items}}
+      {{>textItem id=relevantId}}
+    {{/each}}
+  </div>
+  {{/each}}
+  <hr>
   <ul>
   {{#each contextTriples}}
     <li>
@@ -6,17 +18,6 @@
     </li>
   {{/each}}
   </ul>
-  {{#each groupings}}
-  <strong>{{>textItem id=title}}</strong>
-  <ul>
-    {{#each items}}
-    <li>
-      <!-- {{>textItem id=subject}} {{>textItem id=predicate}} {{>textItem id=object}} -->
-      <strong>{{>textItem id=relevantId}}</strong>
-    </li>
-    {{/each}}
-  </ul>
-  {{/each}}
 
   {{>contextSegment title='Related' items=contextTriples}}
   Note: as subject is priority, then as object then as predicate
